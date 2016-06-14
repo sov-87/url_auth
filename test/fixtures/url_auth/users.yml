@@ -1,0 +1,10 @@
+guest:
+  name: <%= UrlAuth.guest_user_name %>
+
+user_admin:
+  name: 'user_admin'
+  api_code: <%= SecureRandom.hex(10) %>
+
+user_no_admin:
+  name: 'user_no_admin'
+  api_code: <%= SecureRandom.hex(10) %>

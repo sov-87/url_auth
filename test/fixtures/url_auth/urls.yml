@@ -1,0 +1,17 @@
+full_access:
+  name: 'full access'
+  url_pattern: '.*'
+
+simple_get_url:
+  name: 'simple url for GET'
+  url_pattern: '^/simple_get_url'
+  http_method: 'GET'
+  
+simple_url:
+  name: 'simple url for all methods'
+  url_pattern: '^/simple_url'
+
+root:
+  name: 'root'
+  url_pattern: '^/'
+  http_method: 'GET'

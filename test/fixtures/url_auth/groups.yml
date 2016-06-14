@@ -1,0 +1,14 @@
+admins:
+  name: 'Administrators'
+  users: [user_admin]
+  urls: [full_access]
+
+simple_users:
+  name: 'Simple users'
+  users: [user_no_admin]
+  urls: [simple_get_url, simple_url]
+
+free_urls:
+  name: 'Group for free accessing urls'
+  users: [user_no_admin, guest]
+  urls: [root]

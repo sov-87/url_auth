@@ -1,0 +1,72 @@
+free_url:
+  url: '/'
+  users:
+    guest:
+      - method: get
+        result: 200
+      - method: post
+        result: 302
+    user_no_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 403
+    user_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 200
+simple_get_url:
+  url: '/simple_get_url'
+  users:
+    guest:
+      - method: get
+        result: 302
+      - method: post
+        result: 302
+    user_no_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 403
+    user_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 200
+simple_url:
+  url: '/simple_url'
+  users:
+    guest:
+      - method: get
+        result: 302
+      - method: post
+        result: 302
+    user_no_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 200
+    user_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 200
+admin_url:
+  url: '/admin_url'
+  users:
+    guest:
+      - method: get
+        result: 302
+      - method: post
+        result: 302
+    user_no_admin:
+      - method: get
+        result: 403
+      - method: post
+        result: 403
+    user_admin:
+      - method: get
+        result: 200
+      - method: post
+        result: 200
